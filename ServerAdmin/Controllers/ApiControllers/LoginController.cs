@@ -25,6 +25,11 @@ namespace ServerAdmin.Controllers.ApiControllers
 
             var success = this.userAccountHandler.Validate(new UserAccount { Username = loginRequest.Username, Password = loginRequest.Password });
 
+            if (success)
+            {
+
+            }
+
             var result = new LoginResultViewModel() { IsSuccess = success, Key = Guid.NewGuid().ToString() };
             return result;
         }
