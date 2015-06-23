@@ -266,9 +266,7 @@ namespace ServerAdmin.DataAccess
             }
             else
             {
-                this.connection = new SqliteConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
-                //this.connection.ConnectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-
+                connection = new SqliteConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
                 connection.Open();
             }
 
