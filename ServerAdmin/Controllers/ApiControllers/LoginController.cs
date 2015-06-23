@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Web.Http;
-using ServerAdmin.DataAccess;
-using ServerAdmin.DataAccess.Models;
 using ServerAdmin.Models;
+using Tbl.ServerAdmin.DataAccess;
+using Tbl.ServerAdmin.DataAccess.Core;
+using Tbl.ServerAdmin.DataAccess.Handlers;
+using Tbl.ServerAdmin.DataAccess.Models;
 
 namespace ServerAdmin.Controllers.ApiControllers
 {
     public class LoginController : ApiController
     {
-        private readonly DataAccessHandler dataAccess;
-        private readonly UserAccountHandler userAccountHandler;
+        private readonly IDataAccessHandler<ServerAdminDbContext> dataAccess;
+        private readonly IUserAccountHandler userAccountHandler;
 
-        public LoginController()
+        public LoginController(IDataAccessHandler<ServerAdminDbContext> dataAccess, IUserAccountHandler userAccountHandler)
         {
-            this.dataAccess = new DataAccessHandler();
-            this.userAccountHandler = new UserAccountHandler(this.dataAccess);
+            this.dataAccess = dataAccess;
+            this.userAccountHandler = userAccountHandler;
         }
 
         [HttpPost]

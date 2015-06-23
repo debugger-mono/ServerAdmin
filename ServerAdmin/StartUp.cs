@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Web.Http;
+using Autofac;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
+using ServerAdmin.App_Start;
 using ServerAdmin.Provider;
 
 [assembly: OwinStartup(typeof(ServerAdmin.Startup))]
@@ -14,19 +16,22 @@ namespace ServerAdmin
         {
             // app.UseCors(CorsOptions.AllowAll);
 
-            ConfigureOAuth(app);
+            IContainer container = AutofacConfig.SetUp();
+            app.UseAutofacMiddleware(container);
+            app.UseAutofacWebApi(GlobalConfiguration.Configuration);
 
-            HttpConfiguration config = new HttpConfiguration();
+
+            ConfigureOAuth(app, container);
         }
 
-        public void ConfigureOAuth(IAppBuilder app)
+        public void ConfigureOAuth(IAppBuilder app, IContainer container)
         {
             OAuthAuthorizationServerOptions options = new OAuthAuthorizationServerOptions
             {
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
-                Provider = new InternalAuthorisationProvider(),
+                Provider = container.Resolve<InternalAuthorisationProvider>(),
             };
 
             app.UseOAuthAuthorizationServer(options);

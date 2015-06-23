@@ -1,9 +1,9 @@
-﻿using System;
-
-namespace Tbl.ServerAdmin.DataAccess.Core
+﻿namespace Tbl.ServerAdmin.DataAccess.Core
 {
-	public class DatabaseContext
-	{
-		public string ConnectionStringKey { get; set; }
-	}
+    public abstract class DatabaseContext
+    {
+        public string ConnectionStringKey { get; set; }
+
+        public string ProviderName { get; set; }
+    }
 }

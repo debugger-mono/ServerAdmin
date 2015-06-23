@@ -1,20 +1,22 @@
 ﻿using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.Owin.Security.OAuth;
-using ServerAdmin.DataAccess;
-using ServerAdmin.DataAccess.Models;
+using Tbl.ServerAdmin.DataAccess;
+using Tbl.ServerAdmin.DataAccess.Core;
+using Tbl.ServerAdmin.DataAccess.Handlers;
+using Tbl.ServerAdmin.DataAccess.Models;
 
 namespace ServerAdmin.Provider
 {
     public class InternalAuthorisationProvider : OAuthAuthorizationServerProvider
     {
-        private readonly DataAccessHandler dataAccess;
-        private readonly UserAccountHandler userAccountHandler;
+        private readonly IDataAccessHandler<ServerAdminDbContext> dataAccess;
+        private readonly IUserAccountHandler userAccountHandler;
 
-        public InternalAuthorisationProvider()
+        public InternalAuthorisationProvider(IDataAccessHandler<ServerAdminDbContext> dataAccess, IUserAccountHandler userAccountHandler)
         {
-            this.dataAccess = new DataAccessHandler();
-            this.userAccountHandler = new UserAccountHandler(this.dataAccess);
+            this.dataAccess = dataAccess;
+            this.userAccountHandler = userAccountHandler;
         }
 
         public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)

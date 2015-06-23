@@ -118,3 +118,17 @@ D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Facebook.xml
 D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.Core.xml
 D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.Owin.xml
 D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.Owin.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.WebApi.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.WebApi.Owin.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.Core.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.Core.pdb
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.pdb
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.Owin.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.WebApi.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.WebApi.Owin.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.SqlLite.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.SqlLite.pdb

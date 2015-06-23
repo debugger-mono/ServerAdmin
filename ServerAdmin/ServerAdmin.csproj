@@ -39,6 +39,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Owin">
+      <HintPath>..\packages\Autofac.Owin.3.1.0\lib\net45\Autofac.Integration.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi">
+      <HintPath>..\packages\Autofac.WebApi2.3.4.0\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi.Owin">
+      <HintPath>..\packages\Autofac.WebApi2.Owin.3.2.0\lib\net45\Autofac.Integration.WebApi.Owin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin">
       <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
@@ -145,18 +157,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ApiControllers\LoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="DataAccess\DataAccessHandler.cs" />
-    <Compile Include="DataAccess\DataReaderExtensions.cs" />
-    <Compile Include="DataAccess\IConstruct.cs" />
-    <Compile Include="DataAccess\IDataAccessHandler.cs" />
-    <Compile Include="DataAccess\Models\UserAccount.cs" />
-    <Compile Include="DataAccess\UserAccountHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -309,10 +316,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess.Core\Tbl.ServerAdmin.DataAccess.Core.csproj">
+      <Project>{26aa2bee-72d2-44bb-bca3-f1a7caa1a66d}</Project>
+      <Name>Tbl.ServerAdmin.DataAccess.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess.SqlLite\Tbl.ServerAdmin.DataAccess.SqlLite.csproj">
+      <Project>{8661e930-22fe-45e5-a3c9-ce989f5649cc}</Project>
+      <Name>Tbl.ServerAdmin.DataAccess.SqlLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess\Tbl.ServerAdmin.DataAccess.csproj">
+      <Project>{2a3b60b2-e8b0-42f8-99b3-ba42e52274ea}</Project>
+      <Name>Tbl.ServerAdmin.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
