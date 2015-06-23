@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9242E0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{973A9A65-99FE-4669-B8B3-FAC8807B3E75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tbl.ServerAdmin.DataAccess.Core", "Tbl.ServerAdmin.DataAccess\Tbl.ServerAdmin.DataAccess.Core.csproj", "{26AA2BEE-72D2-44BB-BCA3-F1A7CAA1A66D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tbl.ServerAdmin.DataAccess.Core", "Tbl.ServerAdmin.DataAccess.Core\Tbl.ServerAdmin.DataAccess.Core.csproj", "{26AA2BEE-72D2-44BB-BCA3-F1A7CAA1A66D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tbl.ServerAdmin.DataAccess.SqlLite", "Tbl.ServerAdmin.DataAccess.SqlLite\Tbl.ServerAdmin.DataAccess.SqlLite.csproj", "{8661E930-22FE-45E5-A3C9-CE989F5649CC}"
 EndProject

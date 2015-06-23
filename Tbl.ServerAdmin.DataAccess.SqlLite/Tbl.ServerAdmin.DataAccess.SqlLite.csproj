@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -41,7 +41,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess\Tbl.ServerAdmin.DataAccess.Core.csproj">
+    <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess.Core\Tbl.ServerAdmin.DataAccess.Core.csproj">
       <Project>{26AA2BEE-72D2-44BB-BCA3-F1A7CAA1A66D}</Project>
       <Name>Tbl.ServerAdmin.DataAccess.Core</Name>
     </ProjectReference>
