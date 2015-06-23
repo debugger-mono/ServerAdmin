@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="ServerAdmin/ServerAdmin.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="firefox" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tbl.ServerAdmin.DataAccess/BaseDataAccessHandler.cs">
+    <Files>
+      <File FileName="ServerAdmin/DataAccess/DataAccessHandler.cs" Line="258" Column="3" />
+      <File FileName="ServerAdmin/DataAccess/DataReaderExtensions.cs" Line="1" Column="1" />
+      <File FileName="ServerAdmin/DataAccess/IConstruct.cs" Line="1" Column="1" />
+      <File FileName="Tbl.ServerAdmin.DataAccess/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Tbl.ServerAdmin.DataAccess/BaseDataAccessHandler.cs" Line="11" Column="84" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Nitin Mittal" Email="" Copyright="dev" Company="Think Byte Limited" Trademark="" />
+</Properties>

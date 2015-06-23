@@ -1,0 +1,8 @@
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll.mdb
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/obj/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/obj/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll.mdb
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Mono.Data.Sqlite.dll
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb

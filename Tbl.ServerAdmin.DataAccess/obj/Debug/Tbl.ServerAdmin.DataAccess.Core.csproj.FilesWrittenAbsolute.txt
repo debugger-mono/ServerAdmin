@@ -1,0 +1,5 @@
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/obj/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
+/home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/obj/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb
