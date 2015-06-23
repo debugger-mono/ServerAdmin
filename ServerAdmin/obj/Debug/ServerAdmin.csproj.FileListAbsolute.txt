@@ -104,3 +104,17 @@ D:\Dev\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Cookies.xml
 D:\Dev\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\Dev\ServerAdmin\ServerAdmin\bin\EntityFramework.xml
 D:\Dev\ServerAdmin\ServerAdmin\bin\EntityFramework.SqlServer.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Google.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Google.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Microsoft.Owin.Security.Cookies.xml
