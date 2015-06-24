@@ -8,6 +8,8 @@ namespace Tbl.ServerAdmin.DataAccess.Core
     {
         IDbConnection GetConnection();
 
+        void AddParameters(IDbCommand command, params object[] args);
+
         T ConstructObject<T>(string command, Func<IDataReader, T> constructor);
 
         T ConstructObject<T>(string command, Func<IDataReader, T> constructor, params object[] args);
