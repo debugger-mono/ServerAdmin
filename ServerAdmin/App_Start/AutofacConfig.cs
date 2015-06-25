@@ -1,4 +1,7 @@
-﻿using Autofac;
+﻿using System.Reflection;
+using Autofac;
+using Autofac.Integration.Mvc;
+using Autofac.Integration.WebApi;
 using ServerAdmin.Provider;
 using Tbl.ServerAdmin.DataAccess;
 using Tbl.ServerAdmin.DataAccess.Commands;
@@ -26,7 +29,8 @@ namespace ServerAdmin.App_Start
 
         private static void RegisterDependencies()
         {
-            //builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             //builder.RegisterOwinApplicationContainer();
 
             builder.Register<ServerAdminDbContext>(t =>

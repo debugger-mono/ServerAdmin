@@ -26,7 +26,7 @@ namespace Tbl.ServerAdmin.DataAccess.Commands
         private void UserAccountHandler()
         {
             this.dictionary.Add(CommandNames.P_UserAccount_Insert, @"INSERT INTO UserAccount (Username, Password) VALUES (@Username, @Password);");
-            this.dictionary.Add(CommandNames.P_UserAccount_Validate, @"SELECT * FROM UserAccount WHERE Username = @Username AND Password = @Password LIMIT 1;");
+            this.dictionary.Add(CommandNames.P_UserAccount_Validate, @"SELECT EXISTS(SELECT * FROM UserAccount WHERE Username = @Username AND Password = @Password LIMIT 1) ;");
         }
     }
 }

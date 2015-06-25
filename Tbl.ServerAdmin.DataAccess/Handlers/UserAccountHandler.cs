@@ -69,9 +69,8 @@ namespace Tbl.ServerAdmin.DataAccess.Handlers
 
             string command = this.commandProvider.GetCommandText(CommandNames.P_UserAccount_Validate);
 
-            var result = (bool)this.dataAccess.ExecuteScalar(command, new[] { account.Username, account.Password });
-
-            return result;
+            var result = this.dataAccess.ExecuteScalar(command, new[] { account.Username, account.Password });
+            return Convert.ToBoolean(result);
         }
     }
 }

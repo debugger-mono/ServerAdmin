@@ -1,5 +1,8 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.Text.RegularExpressions;
 using Mono.Data.Sqlite;
 using Tbl.ServerAdmin.DataAccess.Core;
 
@@ -36,9 +39,31 @@ namespace Tbl.ServerAdmin.DataAccess.SqlLite
             return connection;
         }
 
-        public override void AddParameters(IDbCommand command, params object[] args)
+        public override IEnumerable<IDbDataParameter> DiscoverParameters(IDbCommand command)
         {
+            if (command.CommandType == CommandType.Text)
+            {
+                return this.DiscoverParametersInternal(command);
+            }
+            else
+            {
+                throw new NotImplementedException("Only CommandType:Text are supported on SqlLite");
+            }
+        }
 
+        private IEnumerable<IDbDataParameter> DiscoverParametersInternal(IDbCommand command)
+        {
+            string commandText = command.CommandText;
+            Regex regex = new Regex(@"@\w*");
+            MatchCollection matches = regex.Matches(commandText);
+            List<SqliteParameter> cmdParams = new List<SqliteParameter>();
+
+            foreach (Match match in matches)
+            {
+                cmdParams.Add(new SqliteParameter(match.Value));
+            }
+
+            return cmdParams;
         }
 
         #endregion

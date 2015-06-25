@@ -132,3 +132,5 @@ D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.WebApi.xml
 D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.WebApi.Owin.xml
 D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.SqlLite.dll
 D:\GitHub\ServerAdmin\ServerAdmin\bin\Tbl.ServerAdmin.DataAccess.SqlLite.pdb
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.Mvc.dll
+D:\GitHub\ServerAdmin\ServerAdmin\bin\Autofac.Integration.Mvc.xml

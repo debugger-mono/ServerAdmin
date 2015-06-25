@@ -89,3 +89,5 @@ D:\GitHub\ServerAdmin\TestApp\bin\Debug\System.Web.Http.Owin.xml
 D:\GitHub\ServerAdmin\TestApp\bin\Debug\Autofac.Integration.WebApi.xml
 D:\GitHub\ServerAdmin\TestApp\bin\Debug\Tbl.ServerAdmin.DataAccess.SqlLite.dll
 D:\GitHub\ServerAdmin\TestApp\bin\Debug\Tbl.ServerAdmin.DataAccess.SqlLite.pdb
+D:\GitHub\ServerAdmin\TestApp\bin\Debug\Autofac.Integration.Mvc.dll
+D:\GitHub\ServerAdmin\TestApp\bin\Debug\Autofac.Integration.Mvc.xml

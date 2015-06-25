@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace Tbl.ServerAdmin.DataAccess.Core
 {
@@ -16,7 +17,7 @@ namespace Tbl.ServerAdmin.DataAccess.Core
 
         public abstract IDbConnection GetConnection();
 
-        public abstract void AddParameters(IDbCommand command, params object[] args);
+        public abstract IEnumerable<IDbDataParameter> DiscoverParameters(IDbCommand command);
 
         public virtual IDataReader ExecuteReader(string command)
         {
@@ -45,7 +46,15 @@ namespace Tbl.ServerAdmin.DataAccess.Core
                 cmd.CommandText = command;
                 cmd.CommandType = commandType;
 
-                this.AddParameters(cmd, args);
+                IEnumerable<IDbDataParameter> parameters = this.DiscoverParameters(cmd);
+
+                for (int i = 0; i < parameters.Count(); i++)
+                {
+                    IDbDataParameter param = parameters.ElementAt(i);
+                    param.Value = args[i] == null ? DBNull.Value : args[i];
+
+                    cmd.Parameters.Add(param);
+                }
 
                 IDataReader reader = null;
 
