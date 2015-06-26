@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace Tbl.ServerAdmin.DataAccess.Core
 {
     public abstract class BaseDataAccessHandler<TDBContext> : IDataAccessHandler<TDBContext> where TDBContext : DatabaseContext
     {
-        protected IDbConnection connection;
         protected IDbTransaction transaction;
         protected TDBContext dbContext;
 
@@ -16,6 +16,8 @@ namespace Tbl.ServerAdmin.DataAccess.Core
         }
 
         public abstract IDbConnection GetConnection();
+
+        public abstract IEnumerable<IDbDataParameter> DiscoverParameters(IDbCommand command);
 
         public virtual IDataReader ExecuteReader(string command)
         {
@@ -39,14 +41,19 @@ namespace Tbl.ServerAdmin.DataAccess.Core
                 throw new ArgumentNullException("args can't be null");
             }
 
-            using (IDbCommand cmd = this.connection.CreateCommand())
+            using (IDbCommand cmd = this.GetConnection().CreateCommand())
             {
                 cmd.CommandText = command;
                 cmd.CommandType = commandType;
 
-                foreach (object arg in args)
+                IEnumerable<IDbDataParameter> parameters = this.DiscoverParameters(cmd);
+
+                for (int i = 0; i < parameters.Count(); i++)
                 {
-                    cmd.Parameters.Add(arg);
+                    IDbDataParameter param = parameters.ElementAt(i);
+                    param.Value = args[i] == null ? DBNull.Value : args[i];
+
+                    cmd.Parameters.Add(param);
                 }
 
                 IDataReader reader = null;
