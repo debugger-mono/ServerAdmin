@@ -7,97 +7,25 @@
     <meta name="description" content="Server Admin">
     <meta name="author" content="">
     <title>Server Admin</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/pluginsCss")
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         @Scripts.Render("~/bundles/Ie8Scripts")
     <![endif]-->
-    @Scripts.Render("~/bundles/Libs")
-    @Scripts.Render("~/bundles/AngularJs")
 </head>
 <body>
 
     @RenderBody()
 
+    @Scripts.Render("~/bundles/AngularJs")
 
+    @Scripts.Render("~/bundles/Libs")
 
-    <script type="text/html" id="templateAppView">
-            <div id="wrapper">
-                <!-- Navigation -->
-                <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Server Admin</a>
-                    </div>
-                </nav>
-                <div id="page-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1 class="page-header">&nbsp;</h1>
-                        </div>
-                        <!-- /.col-lg-12 -->
-                    </div>
-                    <!-- /.row -->
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-hdd-o fa-fw"></i> File Explorer
-                                    <div class="pull-right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                Actions
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                <%
-                                                Dim i As Integer
-                                                For i = 0 To Directory.GetLogicalDrives().Length - 1
-                                                Response.Write("
-                                                <li><a href=javascript:loadDrive('" & directory.getlogicaldrives(i).replace("\", "\\" ) & "');>" & directory.getlogicaldrives(i) & " </a></li>")
-                                                Next
-                                                %>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.panel-heading -->
-                                <div class="panel-body">
-
-                                    <div class="col-lg-13">
-                                        <div class="table-responsive" id="tblDirectory">
-
-                                        </div>
-                                        <!-- /.table-responsive -->
-                                    </div>
-                                    <!-- /.col-lg-4 (nested) -->
-                                    <div class="col-lg-8">
-                                        <div id="morris-bar-chart"></div>
-                                    </div>
-                                    <!-- /.col-lg-8 (nested) -->
-
-                                </div>
-                                <!-- /.panel-body -->
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- /#page-wrapper -->
-            </div>
-        <!-- /#wrapper -->
-        </script>
-
-        @Scripts.Render("~/bundles/Libs")
-        @Scripts.Render("~/bundles/AngularJs")
-
-
+    @Scripts.Render("~/bundles/pluginsJs")
+    
+    @Scripts.Render("~/bundles/AppJs")
 </body>
 </html>
