@@ -1,8 +1,7 @@
 ﻿'use strict';
 
-var app = angular.module('tbl.serveradmin.app');
-
-app.controller('LoginController', ['$scope', '$state', function ($scope, $state) {
+angular.module('tbl.serveradmin.app')
+    .controller('LoginController', ['$scope', '$state', function ($scope, $state) {
 
     console.log('Login Controller Initialized');
 

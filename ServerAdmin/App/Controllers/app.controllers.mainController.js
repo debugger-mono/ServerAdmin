@@ -1,8 +1,7 @@
 ﻿'use strict';
 
-var app = angular.module('tbl.serveradmin.app');
-
-app.controller('MainController', ['$scope', function ($scope) {
+angular.module('tbl.serveradmin.app')
+    .controller('MainController', ['$scope', function ($scope) {
 
     console.log('Main Controller Initialized');
 
