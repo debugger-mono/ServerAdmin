@@ -6,3 +6,11 @@
 /home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Mono.Data.Sqlite.dll
 /home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
 /home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll.mdb
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/obj/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/obj/Debug/Tbl.ServerAdmin.DataAccess.SqlLite.dll.mdb
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Mono.Data.Sqlite.dll
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.SqlLite/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb

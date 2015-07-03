@@ -3,3 +3,8 @@
 /home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
 /home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/obj/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
 /home/dev/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess/obj/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.Core/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.Core/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.Core/bin/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.Core/obj/Debug/Tbl.ServerAdmin.DataAccess.Core.dll
+/home/babbu/Projects/ServerAdmin/Tbl.ServerAdmin.DataAccess.Core/obj/Debug/Tbl.ServerAdmin.DataAccess.Core.dll.mdb

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess.Core\Tbl.ServerAdmin.DataAccess.Core.csproj">
-      <Project>{26aa2bee-72d2-44bb-bca3-f1a7caa1a66d}</Project>
+      <Project>{26AA2BEE-72D2-44BB-BCA3-F1A7CAA1A66D}</Project>
       <Name>Tbl.ServerAdmin.DataAccess.Core</Name>
     </ProjectReference>
   </ItemGroup>
