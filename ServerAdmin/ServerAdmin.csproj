@@ -42,10 +42,6 @@
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="Autofac.Integration.Owin">
       <HintPath>..\packages\Autofac.Owin.3.1.0\lib\net45\Autofac.Integration.Owin.dll</HintPath>
     </Reference>
@@ -159,6 +155,9 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AutofacConfig.cs" />
@@ -186,6 +185,7 @@
     <Content Include="App\Controllers\app.controllers.dashboardController.js" />
     <Content Include="App\Controllers\app.controllers.loginController.js" />
     <Content Include="App\Controllers\app.controllers.mainController.js" />
+    <Content Include="App\Controllers\app.controllers.usersController.js" />
     <Content Include="App\Directives\app.directives.chat.js" />
     <Content Include="App\Directives\app.directives.header.js" />
     <Content Include="App\Directives\app.directives.headerNotification.js" />
@@ -1142,6 +1142,7 @@
     <Content Include="Views\Templates\Notification.cshtml" />
     <Content Include="Views\Templates\Timeline.cshtml" />
     <Content Include="Views\Templates\Chat.cshtml" />
+    <Content Include="Views\Templates\Users.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1152,21 +1153,59 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess.Core\Tbl.ServerAdmin.DataAccess.Core.csproj">
-      <Project>{26aa2bee-72d2-44bb-bca3-f1a7caa1a66d}</Project>
+      <Project>{26AA2BEE-72D2-44BB-BCA3-F1A7CAA1A66D}</Project>
       <Name>Tbl.ServerAdmin.DataAccess.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess.SqlLite\Tbl.ServerAdmin.DataAccess.SqlLite.csproj">
-      <Project>{8661e930-22fe-45e5-a3c9-ce989f5649cc}</Project>
+      <Project>{8661E930-22FE-45E5-A3C9-CE989F5649CC}</Project>
       <Name>Tbl.ServerAdmin.DataAccess.SqlLite</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tbl.ServerAdmin.DataAccess\Tbl.ServerAdmin.DataAccess.csproj">
-      <Project>{2a3b60b2-e8b0-42f8-99b3-ba42e52274ea}</Project>
+      <Project>{2A3B60B2-E8B0-42F8-99B3-BA42E52274EA}</Project>
       <Name>Tbl.ServerAdmin.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Mono Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Mono Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MS Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MS Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
