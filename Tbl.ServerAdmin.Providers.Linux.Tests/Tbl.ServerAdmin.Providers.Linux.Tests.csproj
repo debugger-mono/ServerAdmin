@@ -5,16 +5,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5DD7185-66B4-41DD-AAC9-7E055FB1BF24}</ProjectGuid>
+    <ProjectGuid>{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tbl.ServerAdmin.Providers.Windows.Tests</RootNamespace>
-    <AssemblyName>Tbl.ServerAdmin.Providers.Windows.Tests</AssemblyName>
+    <RootNamespace>Tbl.ServerAdmin.Providers.Linux.Tests</RootNamespace>
+    <AssemblyName>Tbl.ServerAdmin.Providers.Linux.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <NuGetPackageImportStamp>7214115d</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>b7de025a</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +35,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
       <Private>True</Private>
@@ -50,12 +56,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Users\WindowsUserInfoProviderTests\GetUsersTests.cs" />
+    <Compile Include="Users\LinuxUserInfoProviderTests\GetUsersTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tbl.ServerAdmin.Providers.Windows\Tbl.ServerAdmin.Providers.Windows.csproj">
-      <Project>{118c0c80-9338-479d-879a-e6737b6547a0}</Project>
-      <Name>Tbl.ServerAdmin.Providers.Windows</Name>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Tbl.ServerAdmin.Providers.Linux\Tbl.ServerAdmin.Providers.Linux.csproj">
+      <Project>{0049d810-5f36-4932-8cac-9c24199eab3c}</Project>
+      <Name>Tbl.ServerAdmin.Providers.Linux</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tbl.ServerAdmin.Providers\Tbl.ServerAdmin.Providers.csproj">
       <Project>{12381ca9-bf08-4871-9b29-9c306b05a109}</Project>

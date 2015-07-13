@@ -9,7 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9242E0
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{973A9A65-99FE-4669-B8B3-FAC8807B3E75}"
@@ -35,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tbl.ServerAdmin.Providers.Windows.Tests", "Tbl.ServerAdmin.Providers.Windows.Tests\Tbl.ServerAdmin.Providers.Windows.Tests.csproj", "{E5DD7185-66B4-41DD-AAC9-7E055FB1BF24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tbl.ServerAdmin.Providers.Linux", "Tbl.ServerAdmin.Providers.Linux\Tbl.ServerAdmin.Providers.Linux.csproj", "{0049D810-5F36-4932-8CAC-9C24199EAB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tbl.ServerAdmin.Providers.Linux.Tests", "Tbl.ServerAdmin.Providers.Linux.Tests\Tbl.ServerAdmin.Providers.Linux.Tests.csproj", "{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,12 +191,25 @@ Global
 		{0049D810-5F36-4932-8CAC-9C24199EAB3C}.MS Release|Any CPU.Build.0 = Release|Any CPU
 		{0049D810-5F36-4932-8CAC-9C24199EAB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0049D810-5F36-4932-8CAC-9C24199EAB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Mono Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Mono Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Mono Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Mono Release|Any CPU.Build.0 = Release|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.MS Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.MS Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.MS Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.MS Release|Any CPU.Build.0 = Release|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E5DD7185-66B4-41DD-AAC9-7E055FB1BF24} = {CE6761DB-C91C-486F-9801-78DA808558CE}
+		{851F5B53-F7ED-435E-BEF9-6486B3FE42C7} = {CE6761DB-C91C-486F-9801-78DA808558CE}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

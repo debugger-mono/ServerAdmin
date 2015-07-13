@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
+using Tbl.ServerAdmin.Providers.Linux.Users;
 using Tbl.ServerAdmin.Providers.Users;
-using Tbl.ServerAdmin.Providers.Windows.Users;
 using Xunit;
 
-namespace Tbl.ServerAdmin.Providers.Windows.Tests.Users.WindowsUserInfoProviderTests
+namespace Tbl.ServerAdmin.Providers.Linux.Tests.Users.LinuxUserInfoProviderTests
 {
     public class GetUsersTests
     {
@@ -11,7 +11,7 @@ namespace Tbl.ServerAdmin.Providers.Windows.Tests.Users.WindowsUserInfoProviderT
         public void ShouldReturnUsers()
         {
             // Arrange
-            WindowsUserInfoProvider provider = new WindowsUserInfoProvider();
+            LinuxUserInfoProvider provider = new LinuxUserInfoProvider();
 
             // Act
             List<IUserInfo> userInfos = provider.GetUsers();
