@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tbl.ServerAdmin.Providers.Users;
 using Tbl.ServerAdmin.Providers.Windows.Users;
+using Xunit;
 
 namespace Tbl.ServerAdmin.Providers.Windows.Tests.Users.WindowsUserInfoProviderTests
 {
-    [TestClass]
     public class GetUsersTests
     {
-        [TestMethod]
+        [Fact]
         public void ShouldReturnUsers()
         {
             // Arrange
@@ -18,8 +17,8 @@ namespace Tbl.ServerAdmin.Providers.Windows.Tests.Users.WindowsUserInfoProviderT
             List<IUserInfo> userInfos = provider.GetUsers();
 
             // Assert
-            Assert.IsNotNull(userInfos);
-            Assert.IsTrue(userInfos.Count > 0);
+            Assert.NotEmpty(userInfos);
+            Assert.True(userInfos.Count > 0);
         }
     }
 }
