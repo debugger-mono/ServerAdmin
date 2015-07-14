@@ -42,6 +42,9 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GleamTech.FileUltimate">
+      <HintPath>..\..\..\Downloads\FileUltimate-v4.7.0.0\Bin\GleamTech.FileUltimate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -109,6 +112,7 @@
     <Compile Include="Controllers\TemplatesController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Controllers\app.controllers.fileExplorerController.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -1131,6 +1135,7 @@
     <None Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Views\Templates\FileExplorer.cshtml" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

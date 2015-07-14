@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Mvc.Ajax;
+﻿using System.Web.Mvc;
+using System.Web.UI.WebControls;
+using GleamTech.FileUltimate;
 
 namespace Tbl.ServerAdmin.Web.Controllers
 {
@@ -67,6 +64,32 @@ namespace Tbl.ServerAdmin.Web.Controllers
         public ActionResult Users()
         {
             return View();
+        }
+
+        public ActionResult FileExplorer()
+        {
+            FileManager fileManager = new FileManager
+            {
+                Width = Unit.Percentage(100),
+                Height = Unit.Percentage(100),
+                Resizable = true,
+                LicenseKey = "1F72GKKXBZ1FV-3AZTPON3M7NFS-3NR3S3JK8VRYK-25OX90VM7UH8V"
+
+            };
+
+            //Create a root folder via assignment statements and add it to the control.
+            FileManagerRootFolder rootFolder = new FileManagerRootFolder();
+            rootFolder.Name = "1. Root Folder";
+
+            rootFolder.Location = "d:\\";
+
+            fileManager.RootFolders.Add(rootFolder);
+            FileManagerAccessControl accessControl = new FileManagerAccessControl();
+            accessControl.Path = @"\";
+            accessControl.AllowedPermissions = FileManagerPermissions.Full;
+            rootFolder.AccessControls.Add(accessControl);
+
+            return View(fileManager);
         }
     }
 }

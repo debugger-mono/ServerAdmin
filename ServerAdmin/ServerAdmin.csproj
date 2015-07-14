@@ -52,6 +52,9 @@
     <Reference Include="Autofac.Integration.WebApi.Owin">
       <HintPath>..\packages\Autofac.WebApi2.Owin.3.2.0\lib\net45\Autofac.Integration.WebApi.Owin.dll</HintPath>
     </Reference>
+    <Reference Include="GleamTech.FileUltimate">
+      <HintPath>..\..\..\Downloads\FileUltimate-v4.7.0.0\Bin\GleamTech.FileUltimate.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin">
       <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
@@ -184,6 +187,7 @@
     <Content Include="App\app.js" />
     <Content Include="App\app.services.js" />
     <Content Include="App\Controllers\app.controllers.dashboardController.js" />
+    <Content Include="App\Controllers\app.controllers.fileExplorerController.js" />
     <Content Include="App\Controllers\app.controllers.loginController.js" />
     <Content Include="App\Controllers\app.controllers.mainController.js" />
     <Content Include="App\Controllers\app.controllers.usersController.js" />
@@ -1144,6 +1148,7 @@
     <Content Include="Views\Templates\Timeline.cshtml" />
     <Content Include="Views\Templates\Chat.cshtml" />
     <Content Include="Views\Templates\Users.cshtml" />
+    <Content Include="Views\Templates\FileExplorer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
