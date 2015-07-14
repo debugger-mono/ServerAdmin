@@ -212,3 +212,4 @@ FakesAssemblies/
 *.opt
 
 /.project
+*.ncrunchsolution
